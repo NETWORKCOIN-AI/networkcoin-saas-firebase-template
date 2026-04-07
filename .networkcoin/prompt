@@ -1,0 +1,17 @@
+This is a SaaS boilerplate built with Vite, React 18, TypeScript, Tailwind CSS, shadcn/ui, and Firebase.
+
+Key architecture:
+- Firebase Authentication (email/password + Google sign-in) via AuthContext
+- Protected routes using ProtectedRoute component
+- Dashboard layout with sidebar navigation
+- shadcn/ui component library with CSS variables theming
+- HashRouter for client-side routing
+
+Firebase config is loaded from VITE_FIREBASE_* environment variables.
+
+When adding new features:
+- Place UI components in src/components/ui/
+- Place feature components in src/components/{feature}/
+- Place pages in src/pages/
+- Use the AuthContext for auth state
+- Use the cn() utility from src/lib/utils.ts for className merging
